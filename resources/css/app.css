@@ -1,0 +1,24 @@
+
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+
+    html, body {
+        font-family: 'GenSenRounded2 TW R','inter', 'Noto Sans TC', 'Microsoft JhengHei', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased; /* 优化 iOS 字体显示 */
+        -moz-osx-font-smoothing: grayscale; /* 优化 MacOS 字体显示 */
+        font-display: swap; /* 字體預載 */
+
+    }
+
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+
+}
+
