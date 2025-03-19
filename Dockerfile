@@ -4,7 +4,6 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm install
 COPY . .
-RUN npm run build
 
 # 第二階段：構建 Laravel 後端
 FROM php:8.1-fpm
