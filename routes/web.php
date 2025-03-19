@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 /*
  * vue管控前端路由
  */
-Route::get('vue/{any?}', function () {
+Route::get('/', function () {
     return view('welcome');
 })->where('any', '.*');
 Route::group(['prefix' => '/', 'namespace' => '\App\Http\Controllers'], function () {
