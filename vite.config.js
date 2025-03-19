@@ -41,7 +41,6 @@ export default defineConfig({
 
     build: {
         outDir: 'public/build',
-        manifest: true, // 生成 manifest.json，供 Laravel 使用
     },
 
     resolve: {
