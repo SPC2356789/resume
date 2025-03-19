@@ -16,7 +16,7 @@ export default {
         <div class="mx-auto px-4 min-h-screen flex flex-col justify-center">
             <h2 class="text-3xl font-bold text-center mb-8">我的證照</h2>
             <div class="flex flex-col bg-white p-6 rounded-lg shadow-md text-center items-center ">
-                <p class="mt-4 text-gray-600 w-full sm:w-1/2">{{certificates.cont}}</p>
+                <p class="mt-4 text-gray-600 w-full sm:w-1/2 px-5 text-start">{{certificates.cont}}</p>
                 <a
                     color="gray"
                     :href="certificates.credlyUrl"

@@ -22,7 +22,7 @@ import CertificatesSection from './components/CertificatesSection.vue'; //
 // 集中管理的響應式資料
 const hero = ref(
     {
-        wel:'陳勝嶸 的履歷網頁',
+        wel:'歡迎',
         im:'您好，我是一名全端工程師，具備紮實的前後端開發能力，致力於打造高效、安全且優質的網頁應用程式。前端方面，我擅長使用 Vue.js 與 Tailwind CSS 開發響應式介面，結合 Vite 的熱重載技術提升開發效率，確保使用者體驗流暢且視覺設計符合現代標準。後端方面，我熟悉 Laravel 框架，能設計穩定的 API。',
         drc:'這個履歷使用laravel為基底，以SPA的概念使用VUE語法架構的一頁式網站',
         about:'關於我',
