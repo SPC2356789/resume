@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
@@ -38,6 +38,11 @@ export default defineConfig({
             },
         }),
     ],
+
+    build: {
+        outDir: 'public/build',
+    },
+
     resolve: {
         alias: {
             '@': '/resources', // 將 @ 指向 resources 資料夾
