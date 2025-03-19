@@ -41,6 +41,7 @@ export default defineConfig({
 
     build: {
         outDir: 'public/build',
+        manifest: true, // 必須啟用
     },
 
     resolve: {

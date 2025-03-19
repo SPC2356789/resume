@@ -1,7 +1,7 @@
 # 第一階段：構建 Vue 前端
 FROM node:18 AS frontend
 WORKDIR /app
-COPY package.json ./
+COPY package.json package-lock.json* ./
 RUN npm install
 COPY . .
 RUN npm run build
@@ -29,8 +29,8 @@ WORKDIR /var/www/html
 # 複製所有專案檔案
 COPY . .
 
-# 從前端階段複製構建好的靜態資源
-COPY --from=frontend /app/public /var/www/html/public
+# 從前端階段複製構建好的靜態資源（僅 build 目錄）
+COPY --from=frontend /app/public/build /var/www/html/public/build
 
 # 安裝 Laravel 依賴
 RUN composer install --optimize-autoloader --no-dev
