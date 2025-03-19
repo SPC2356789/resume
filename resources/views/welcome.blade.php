@@ -12,5 +12,3 @@
 <div class="bg-emerald-600" id="app"></div>
 </body>
 </html>
-
-<!-- 你的內容 -->
