@@ -41,7 +41,7 @@ export default defineConfig({
 
     build: {
         outDir: 'public/build',
-        manifest: true, // 必須啟用
+        manifest: 'manifest.json', // 明確指定文件名，確保輸出到 public/build/manifest.json
     },
 
     resolve: {
