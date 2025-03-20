@@ -19,6 +19,7 @@ Route::group(['prefix' => '/', 'namespace' => '\App\Http\Controllers'], function
 /*
  * vue管控前端路由
  */
-Route::get('/{any}', function () {
+// 統整所有前端路由，交給 Vue 處理
+Route::get('{any?}', function () {
     return view('welcome');
-})->where('any', '.*');
+})->where('any', '^(?!.*\.(png|jpg|jpeg|gif|ico|css|js|woff|woff2|ttf|eot|svg))(|vue|vue/.*)$');

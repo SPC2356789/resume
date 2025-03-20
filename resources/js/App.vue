@@ -33,11 +33,7 @@ import {useRoute} from 'vue-router';
 const route = useRoute();
 
 // 如果是根路由，顯示完整頁面
-const isHome = () => route.path === '/' ;
-// 監控路由變化
-// watch(() => route.path, (newPath) => {
-//     console.log('isHome:', isHome());
-// }, { immediate: true }); // immediate 確保初次載入也執行
+const isHome = () => route.path === '/vue' ||route.path === '/';
 
 
 // 根據路由動態決定 props
@@ -65,7 +61,7 @@ const hero = ref(
     {
         wel: '歡迎',
         im: '您好，我是一名全端工程師，具備紮實的前後端開發能力，致力於打造高效、安全且優質的網頁應用程式。前端方面，我擅長使用 Vue.js 與 Tailwind CSS 開發響應式介面，結合 Vite 的熱重載技術提升開發效率，確保使用者體驗流暢且視覺設計符合現代標準。後端方面，我熟悉 Laravel 框架，能設計穩定的 API。',
-        drc: '這個履歷使用laravel為基底，以SPA的概念使用VUE語法架構的一頁式網站',
+        drc: '這個履歷使用laravel為基底，以SPA的概念使用VUE語法架構在render的一頁式免費網站',
         about: '關於我',
         image: '/storage/photo.jpg', // 從 public 引用
     })

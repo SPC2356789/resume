@@ -1,15 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
-// import App from './App.vue'; // 根組件
+import App from './App.vue'; // 根組件
 import Hackmd from './components/HackmdSection.vue'; // About 頁面
 import About from './components/AboutSection.vue'; // About 頁面
 import Certificates from './components/CertificatesSection.vue'; // About 頁面
 import Works from './components/WorksSection.vue'; // About 頁面
 
 const routes = [
-    { path: '/hackmd', name: 'Hackmd', component: Hackmd },
-    { path: '/about', name: 'About', component: About },
-    { path: '/certificates', name: 'Certificates', component: Certificates },
-    { path: '/works', name: 'Works', component: Works },
+
+    { path: '/vue/', name: 'APP', component: App },
+    { path: '/vue/hackmd', name: 'Hackmd', component: Hackmd },
+    { path: '/vue/about', name: 'About', component: About },
+    { path: '/vue/certificates', name: 'Certificates', component: Certificates },
+    { path: '/vue/works', name: 'Works', component: Works },
 ];
 
 const router = createRouter({

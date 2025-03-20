@@ -30,7 +30,7 @@
                     v-for="item in items"
                     :key="item"
                     class="text-none"
-                    :href="`${item.base??'/'}${item.link}`"
+                    :href="`${item.base??'/vue/'}${item.link}`"
                     variant="text"
                 >
                     {{ item.name }}
@@ -42,13 +42,13 @@
 </template>
 
 <script setup>
-import {shallowRef, watch} from 'vue'
+import {ref, watch} from 'vue'
 import {useDisplay} from 'vuetify';
 
 defineOptions({
     name: 'NavBar'
 })
-const drawer = shallowRef(false);
+const drawer = ref(false);
 const display = useDisplay(); // 使用 Vuetify 的 display 工具
 
 // 監聽螢幕大小變化，當變為 mdAndUp 時關閉抽屜
@@ -61,7 +61,7 @@ const items = [
     {
         name: '首頁',
         link: 'home',
-        base:'/#'
+        base:'/vue#'
     },
     {
         name: '關於我',
@@ -82,7 +82,7 @@ const items = [
     {
         name: '聯絡',
         link: 'contact',
-        base:'/#'
+        base:'/vue#'
     }
 ]
 
