@@ -23,6 +23,10 @@
                         hero.about
                     }}
                 </v-btn>
+                <v-btn href="https://github.com/SPC2356789/resume"
+                       class="bg-white text-neutral-500 rounded-full font-semibold hover:bg-neutral-700 pa-3 ms-1 cursor-pointer">
+                   查看頁面git
+                </v-btn>
             </div>
         </div>
     </section>
