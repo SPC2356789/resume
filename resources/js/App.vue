@@ -22,13 +22,13 @@
 import {ref, computed} from 'vue';
 
 import NavBar from './components/NavBar.vue';
-import {useRoute} from 'vue-router';
 import HeroSection from './components/HeroSection.vue';
 import AboutSection from './components/AboutSection.vue';
 import WorksSection from './components/WorksSection.vue';
 import HackmdSection from './components/HackmdSection.vue';
 import ContactSection from './components/ContactSection.vue';
 import CertificatesSection from './components/CertificatesSection.vue'; //
+import {useRoute} from 'vue-router';
 // 集中管理的響應式資料
 const route = useRoute();
 
