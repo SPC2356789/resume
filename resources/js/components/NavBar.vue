@@ -7,7 +7,8 @@
                     :key="item.name"
                     :title="item.name"
                     :href="`${item.base??'/'}${item.link}`"
-                    link
+                    :link="!item.base"
+                @click="item.base ? scrollToSection(item.link) : null"
                 />
             </v-list>
         </v-navigation-drawer>
@@ -17,6 +18,7 @@
                 <v-app-bar-nav-icon
                     v-if="$vuetify.display.smAndDown"
                     @click="drawer = !drawer"
+
                 />
             </template>
 
@@ -85,6 +87,26 @@ const items = [
         base:'/#'
     }
 ]
+
+function scrollToSection(id) {
+    // 如果不在首頁，跳轉到首頁並滾動
+    if (!['/', '/home'].includes(route.path)) {
+        router.push(`/#${id}`).then(() => {
+            scroll(id);
+        });
+    } else {
+        scroll(id);
+    }
+    drawer.value = false; // 關閉抽屜
+}
+
+function scroll(id) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -60); // 偏移導航欄高度
+    }
+}
 </script>
 
 <style scoped>

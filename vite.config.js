@@ -10,16 +10,17 @@ export default defineConfig({
     //     host: '0.0.0.0', // 允許外部訪問（Docker 必須）
     // },
     server: {
-        host: '127.0.0.1',
+        host: 'localhost',
 
         base: '/',
         hmr: {
             base: '/',
 
-            host: '127.0.0.1',
+            host: 'localhost',
             overlay: true,  // 禁用 HMR 錯誤提示
         },
     },
+
     plugins: [
         tailwindcss(),
         laravel({
