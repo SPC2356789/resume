@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel Vue SPA</title>
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+    <title>陳勝嶸 的履歷網頁</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
 
 </head>

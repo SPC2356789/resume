@@ -1,7 +1,7 @@
 
 <script>
 export default {
-    name: 'Certificates',
+    // name: 'Certificates',
     props: {
         certificates: {
             type: Object,

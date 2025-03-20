@@ -47,7 +47,7 @@
 
 <script>
 export default {
-    name: 'AboutSection',
+    // name: 'About',
     props: {
         aboutText: {
             type: String,

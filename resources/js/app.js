@@ -28,3 +28,7 @@ router.isReady().then(() => {
     app.mount('#app');
     console.log('Vue app initialized');
 });
+router.beforeEach((to, from, next) => {
+    console.log('Navigating to:', to.path);
+    next();
+});

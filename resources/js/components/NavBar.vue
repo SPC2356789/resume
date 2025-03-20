@@ -6,7 +6,7 @@
                     v-for="item in items"
                     :key="item.name"
                     :title="item.name"
-                    :href="`#${item.link}`"
+                    :href="`${item.base??'/'}${item.link}`"
                     link
                 />
             </v-list>
@@ -26,15 +26,15 @@
             </div>
 
             <div class="d-md-flex d-none ga-4 mx-auto">
-                <v-btn
+                <a
                     v-for="item in items"
                     :key="item"
                     class="text-none"
-                    :href="`#${item.link}`"
+                    :href="`${item.base??'/'}${item.link}`"
                     variant="text"
                 >
                     {{ item.name }}
-                </v-btn>
+                </a>
             </div>
 
         </v-app-bar>
@@ -60,7 +60,8 @@ watch(() => display.smAndDown.value, (newValue) => {
 const items = [
     {
         name: '首頁',
-        link: 'home'
+        link: 'home',
+        base:'/#'
     },
     {
         name: '關於我',
@@ -68,7 +69,7 @@ const items = [
     },
     {
         name: '證照',
-        link: 'Certificates'
+        link: 'certificates'
     },
     {
         name: '作品',
@@ -80,7 +81,8 @@ const items = [
     },
     {
         name: '聯絡',
-        link: 'contact'
+        link: 'contact',
+        base:'/#'
     }
 ]
 </script>

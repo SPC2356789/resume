@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*
- * vue管控前端路由
- */
-Route::get('/', function () {
-    return view('welcome');
-})->where('any', '.*');
 Route::group(['prefix' => '/', 'namespace' => '\App\Http\Controllers'], function () {
     Route::get('/hackmd/notes', 'HackmdController@getNotes');
 });
+/*
+ * vue管控前端路由
+ */
+Route::get('/{any}', function () {
+    return view('welcome');
+})->where('any', '.*');

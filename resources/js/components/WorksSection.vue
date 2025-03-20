@@ -19,7 +19,7 @@
 
 <script>
 export default {
-    name: 'WorksSection',
+    // name: 'Works',
     props: {
         works: {
             type: Array,
