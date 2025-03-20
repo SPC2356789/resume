@@ -8,6 +8,7 @@ import Works from './components/WorksSection.vue'; // About 頁面
 const routes = [
 
     { path: '/vue/', name: 'APP', component: App },
+    { path: '/', name: 'APP', component: App },
     { path: '/vue/hackmd', name: 'Hackmd', component: Hackmd },
     { path: '/vue/about', name: 'About', component: About },
     { path: '/vue/certificates', name: 'Certificates', component: Certificates },
@@ -19,9 +20,9 @@ const router = createRouter({
     routes,
 });
 
-router.beforeEach((to, from, next) => {
-    console.log('Navigating to:', to.path);
-    next();
-});
+// router.beforeEach((to, from, next) => {
+//     console.log('Navigating to:', to.path);
+//     next();
+// });
 
 export default router;

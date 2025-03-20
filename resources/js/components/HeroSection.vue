@@ -28,19 +28,6 @@
     </section>
 </template>
 
-<script setup>
-import {shallowRef} from 'vue'
-
-const drawer = shallowRef(false)
-
-const items = [
-    'Products',
-    'Services',
-    'About',
-    'Contact',
-]
-</script>
-
 <style scoped>
 
 </style>

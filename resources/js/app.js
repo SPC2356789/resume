@@ -26,9 +26,6 @@ app.use(vuetify); // 使用 Vuetify
 // 等待路由準備好再掛載
 router.isReady().then(() => {
     app.mount('#app');
-    console.log('Vue app initialized');
+    // console.log('Vue app initialized');
 });
-router.beforeEach((to, from, next) => {
-    console.log('Navigating to:', to.path);
-    next();
-});
+
