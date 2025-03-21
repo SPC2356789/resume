@@ -6,7 +6,7 @@
                     v-for="item in items"
                     :key="item.name"
                     :title="item.name"
-                    :href="`${item.base??'/'}${item.link}`"
+                    :href="`${item.base??'/vue/'}${item.link}`"
                 />
             </v-list>
         </v-navigation-drawer>
