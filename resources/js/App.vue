@@ -108,13 +108,6 @@ const works = ref([
         gitText: '因前公司財產權問題故無法提供相關程式碼',
         siteLink: 'https://www.thorabv.com/',
     },
-    {
-        id: 3,
-        title: '行事曆小網站(已上線使用)',
-        description: '學laravel初期，利用空閒幫朋友開發的行事曆管理網站，用於工作室的預約。',
-        gitLink: 'https://github.com/SPC2356789/suun',
-        siteLink: 'https://phplaravel-1198728-4230054.cloudwaysapps.com/',
-    },
 ]);
 
 const contact = ref({
