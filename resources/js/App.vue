@@ -98,7 +98,7 @@ const works = ref([
         id: 1,
         title: 'YESMAN登山報名網(即將上線)',
         description: '登山行程報名網站，支援全客製化。前端使用 Vue，後端基於 Laravel，搭配 Tailwind CSS 打造現代化介面，後台採用 FilamentPHP 實現 RBAC 管理。',
-        gitLink: 'https://github.com/SPC2356789/yesmans',
+        gitText: '防止專案核心碼洩漏造成資安問題，若有需要將於面試時提供',
         siteLink: 'https://phpstack-1437293-5372187.cloudwaysapps.com/',
     },
     {
